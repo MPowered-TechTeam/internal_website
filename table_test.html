@@ -14,6 +14,9 @@
 
       <div id="member_table">
       </div>
+      <div id="data">
+jeff 1 2 3, harsha 1 2 3, praful 1 2 3, jason 1 2 3, ryan 1 2 3, matt 1 2 3
+      </div>
 
     </div> <!-- /container -->
 
@@ -22,10 +25,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="buildtable.js"></script>
+    <script src="memberPage.js"></script>
     <script type="text/javascript">
-      var array1 = [1,2];
-      var array = [array1, array1];
-      build_table(array)
+      build_table(getDataAndParse('data'));
     </script>
   </body>
 </html>
