@@ -1,11 +1,11 @@
 
 function getDataAndParse(idName) {
 	var data = document.getElementById(idName).innerHTML;
-	var table = data.split("\n");
+	data = data.split("\n");
 
-	for (var i = 0; i < table.length; i++) {
-		table[i].split(",");
+	for (var i = 0; i < data.length; i++) {
+		data[i] = data[i].split(",");
 	}
 
-	return table;
+	return data;
 }
