@@ -22,6 +22,11 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <style type="text/css">
+      #data {
+        display: none;
+      }
+    </style>
   </head>
 
   <body>
@@ -41,25 +46,11 @@
 
       <div class="row-fluid marketing">
         <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="span6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+          <div id="member_table">
+          </div>
+          <div id="data">
+    jeff, 1, 2, 3; harsha, 1, 2, 3; praful, 1, 2, 3; jason, 1, 2, 3; ryan, 1, 2, 3; matt, 1, 2, 3
+          </div>
         </div>
       </div>
 
@@ -87,6 +78,17 @@
     <script src="assets/js/bootstrap-collapse.js"></script>
     <script src="assets/js/bootstrap-carousel.js"></script>
     <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script type="text/javascript" src="jquery.tableSort.js"></script>
+    <script src="buildtable.js"></script>
+    <script src="memberPage.js"></script>
+    <script type="text/javascript">
+      build_table(getDataAndParse('data'));
 
+      //JQUERY      
+      $(function() {
+        
+
+      }); 
+    </script>
   </body>
 </html>
