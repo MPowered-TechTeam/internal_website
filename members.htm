@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <!-- Le styles -->
+    <!-- styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -23,8 +23,16 @@
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="../assets/ico/favicon.png">
     <style type="text/css">
+      
       #data {
         display: none;
+      }
+
+      th {
+        cursor: pointer;
+      }
+      th:hover {
+        text-decoration: underline;
       }
     </style>
   </head>
@@ -48,7 +56,13 @@
       <div id="member_table">
       </div>
       <div id="data" class="cushycms">
-        Jeff, 3, 2, 2; Harsha, 6, 2, 2; Praful, 12, 2, 3; Jason, 4, 2, 3; Ryan, 2, 2, 3; Matt, 5, 2, 2
+        Name, Uniqname, Team, Status, Class;
+        Jeff, jsallans, Tech Team, Core, Junior;
+        Harsha, hgotur, Tech Team, Talent, Sophomore; 
+        Praful, 12, 2, 3, 2; 
+        Jason, 4, 2, 3, 2; 
+        Ryan, 2, 2, 3, 2; 
+        Matt, mlripper, Tech Team, Talent, Junior
       </div>
 
 
@@ -60,7 +74,7 @@
 
     </div> <!-- /container -->
 
-    <!-- Le javascript
+    <!-- javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="assets/js/jquery.js"></script>
@@ -81,12 +95,6 @@
     <script src="memberPage.js"></script>
     <script type="text/javascript">
       build_table(getDataAndParse('data'));
-
-      //JQUERY      
-      $(function() {
-        
-
-      }); 
     </script>
   </body>
 </html>
